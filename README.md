@@ -103,7 +103,7 @@ If you are performing a network scan or monitoring local network interfaces, ens
 
 ##  Files Description
 
-queries/redash_queries.md: Contains all SQL queries for Redash visualizations & KPIs.
+* queries/redash_queries.md: Contains all SQL queries for Redash visualizations & KPIs.
 
 * requirements.txt: Python dependencies.
 
