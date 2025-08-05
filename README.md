@@ -92,10 +92,15 @@ sudo systemctl start network_monitor.service
 * Create widgets for KPIs and logs as per the queries documentation.
 * Organize widgets into "SIEM-LT Dashboard".
 
+<<<<<<< HEAD
 ### 7. Important Note for Network Scanning
+=======
+##  Files Description
+>>>>>>> 1c1c1a2 (Updated README with screenshot and fixed structure)
 
 If you are performing a network scan or monitoring local network interfaces, ensure you edit the subnet and IP address in the relevant Python scripts and queries. The current configurations use the developer's local network IP ranges. Update these to reflect your target network environment before execution.
 
+<<<<<<< HEAD
 ##  Files Description
 
 queries/redash_queries.md: Contains all SQL queries for Redash visualizations & KPIs.
@@ -118,6 +123,8 @@ queries/redash_queries.md: Contains all SQL queries for Redash visualizations & 
 
 
 
+=======
+>>>>>>> 1c1c1a2 (Updated README with screenshot and fixed structure)
 ##  Known Issues
 
 * PostgreSQL IP must be updated if Tailscale IP changes.
