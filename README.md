@@ -124,7 +124,7 @@ queries/redash_queries.md: Contains all SQL queries for Redash visualizations & 
 
 
 =======
->>>>>>> 1c1c1a2 (Updated README with screenshot and fixed structure)
+
 ##  Known Issues
 
 * PostgreSQL IP must be updated if Tailscale IP changes.
