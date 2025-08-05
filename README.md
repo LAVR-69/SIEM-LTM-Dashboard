@@ -27,7 +27,7 @@ This project provides a lightweight SIEM-lite dashboard for real-time monitoring
 
 ```bash
 git clone https://github.com/LAVR-69/SIEM-lt-Dashboard.git
-cd SIEM-lt-Dashboard/live-system-monitor
+cd SIEM-LTM-Dashboard/live-system-monitor
 ```
 
 ### 2. Python Virtual Environment
