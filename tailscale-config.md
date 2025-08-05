@@ -23,7 +23,7 @@ sudo tailscale up --advertise-exit-node
 4. Check Connection:
 tailscale status
 
-5. Ensuring Tailscale Hijacking does not overide the system, if it does then do this:
+5. Ensure Tailscale Hijacking does not overide the system, if it does then proceed with this:
 sudo tailscale up --accept-dns=false --reset 
 
 Notes:
