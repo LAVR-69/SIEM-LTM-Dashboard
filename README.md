@@ -26,7 +26,7 @@ This project provides a lightweight SIEM-lite dashboard for real-time monitoring
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/LAVR-69/SIEM-lt-Dashboard.git
+git clone https://github.com/LAVR-69/SIEM-LTM-Dashboard.git
 cd SIEM-LTM-Dashboard/live-system-monitor
 ```
 
