@@ -18,6 +18,10 @@ This project provides a lightweight SIEM-lite dashboard for real-time monitoring
  │     └── usb_monitor.service
  │     └── endpoint_monitor.service
  │     └── network_monitor.service
+ ├── endpoint_monitor.py
+ ├── network_monitor.py
+ ├── usb_monitor.py
+ ├── live_monitor.py
  └── README.md
 ```
 
@@ -89,11 +93,25 @@ If you are performing a network scan or monitoring local network interfaces, ens
 
 ##  Files Description
 
-* `queries/redash_queries.md`: Contains all SQL queries for Redash visualizations & KPIs.
-* `requirements.txt`: Python dependencies.
-* `tailscale-config.md`: Tailscale setup instructions.
-* `sql/schema.sql`: PostgreSQL table schemas for USB Events, Endpoints, and Network Interfaces.
-* `systemd/`: Contains service files to automate Python scripts on system boot.
+queries/redash_queries.md: Contains all SQL queries for Redash visualizations & KPIs.
+
+* requirements.txt: Python dependencies.
+
+* tailscale-config.md: Tailscale setup instructions.
+
+* sql/schema.sql: PostgreSQL table schemas for USB Events, Endpoints, and Network Interfaces.
+
+* systemd/: Contains service files to automate Python scripts on system boot.
+
+* endpoint_monitor.py: Script for monitoring active endpoint device connections.
+
+* network_monitor.py: Script for capturing network interface RX/TX statistics.
+
+* usb_monitor.py: Script for monitoring USB device plug-in/out events.
+
+* live_monitor.py: Optional combined live monitoring controller script.
+
+
 
 ##  Known Issues
 
