@@ -18,7 +18,10 @@ This project provides a lightweight SIEM-lite dashboard for real-time monitoring
  ├── requirements.txt
  ├── tailscale-config.md
  ├── sql/
- │     └── schema.sql
+ │     ├── Execution_Steps_Detailed_Documentation.md
+ │     ├── Endpoint_Devices_Connections.sql
+ │     ├── Network_Interfaces_Monitoring.sql
+ │     └── USB_Events.sql
  ├── systemd/
  │     └── usb_monitor.service
  │     └── endpoint_monitor.service
