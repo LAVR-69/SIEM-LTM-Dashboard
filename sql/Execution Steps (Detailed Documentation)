@@ -1,0 +1,26 @@
+USB Monitor Service:
+Python Script: usb_monitor.py uses pyudev to listen for device add/remove events.
+Inserts event logs into usb_events table.
+Managed via usb_monitor.service (systemd).
+
+Endpoint Monitor Service:
+Python Script: endpoint_monitor.py uses **psutil.net_connections()`.
+Tracks active IP connections and logs them to endpoint_connections.
+Managed via endpoint_monitor.service.
+
+Network Interface Monitor Service:
+Python Script: network_monitor.py uses psutil.net_io_counters() & net_if_stats().
+Logs RX/TX byte stats into network_interfaces.
+Managed via network_monitor.service.
+
+PostgreSQL Database:
+Hosted on Tailscale-connected device.
+Database: network_monitor
+User: monitor_user
+
+Redash Dashboard:
+DataSource: PostgreSQL (Tailscale IP)
+Queries for USB, Endpoint, and Network Interface Stats.
+KPIs & Widgets configured per table.
+
+
