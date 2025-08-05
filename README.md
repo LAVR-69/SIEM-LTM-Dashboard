@@ -123,7 +123,7 @@ queries/redash_queries.md: Contains all SQL queries for Redash visualizations & 
 
 
 
-=======
+
 
 ##  Known Issues
 
