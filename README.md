@@ -136,7 +136,7 @@ sudo systemctl start network_monitor.service
 
 
 
-## ✅ Final Checklist Before Deployment
+## ✅ Final Checklist
 
 * [x] PostgreSQL DB & User Created.
 * [x] Tailscale Connected Across Devices.
