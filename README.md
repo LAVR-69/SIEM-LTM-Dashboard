@@ -1,5 +1,10 @@
 # SIEM-LTM Dashboard Monitoring Project
 
+##  Dashboard Preview
+
+![SIEM-LT Dashboard Screenshot](SIEM-LTM-DASH-SCREENSHOT.png)
+
+
 ##  Project Overview
 
 This project provides a lightweight SIEM-lite dashboard for real-time monitoring of USB device events, endpoint device connections, and network interface statistics. Designed for minimal resource environments, it integrates Python scripts, PostgreSQL, and Redash visualizations, with centralized data collection via Tailscale.
