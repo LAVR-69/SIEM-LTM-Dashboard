@@ -59,6 +59,7 @@ pip install -r requirements.txt
 ```bash
 psql -U monitor_user -d network_monitor -f sql/schema.sql
 ```
+Refer to sql/Execution_Steps_Detailed_Documentation.md for detailed setup & troubleshooting steps.
 
 ### 4. Tailscale Configuration
 
