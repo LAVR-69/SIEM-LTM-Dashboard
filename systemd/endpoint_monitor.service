@@ -1,1 +1,24 @@
+[Unit]
+Description=Endpoint Device Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+User=lavr69
+WorkingDirectory=/home/lavr69/live-system-monitor
+ExecStart=/home/lavr69/live-system-monitor/venv/bin/python3 /home/lavr69/live-system-monitor/endpoint_monitor.py
+Restart=always
+Environment="VIRTUAL_ENV=/home/lavr69/live-system-monitor/venv"
+Environment="PATH=/home/lavr69/live-system-monitor/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+[Install]
+WantedBy=multi-user.target
+
+Steps to Deploy:
+
+sudo cp systemd/endpoint_monitor.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable endpoint_monitor.service
+sudo systemctl start endpoint_monitor.service
+sudo systemctl status endpoint_monitor.service
 
