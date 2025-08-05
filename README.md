@@ -1,10 +1,10 @@
 # SIEM-LTM Dashboard Monitoring Project
 
-## 📁 Project Overview
+##  Project Overview
 
 This project provides a lightweight SIEM-lite dashboard for real-time monitoring of USB device events, endpoint device connections, and network interface statistics. Designed for minimal resource environments, it integrates Python scripts, PostgreSQL, and Redash visualizations, with centralized data collection via Tailscale.
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 /live-system-monitor
@@ -21,7 +21,7 @@ This project provides a lightweight SIEM-lite dashboard for real-time monitoring
  └── README.md
 ```
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone Repository
 
@@ -83,7 +83,7 @@ sudo systemctl start network_monitor.service
 * Create widgets for KPIs and logs as per the queries documentation.
 * Organize widgets into "SIEM-LT Dashboard".
 
-## 📝 Files Description
+##  Files Description
 
 * `queries/redash_queries.md`: Contains all SQL queries for Redash visualizations & KPIs.
 * `requirements.txt`: Python dependencies.
@@ -91,19 +91,19 @@ sudo systemctl start network_monitor.service
 * `sql/schema.sql`: PostgreSQL table schemas for USB Events, Endpoints, and Network Interfaces.
 * `systemd/`: Contains service files to automate Python scripts on system boot.
 
-## 🚧 Known Issues
+##  Known Issues
 
 * PostgreSQL IP must be updated if Tailscale IP changes.
 * Lightweight design omits advanced correlation rules.
 * Filebeat/Fluent Bit is not used; Python scripts push logs directly.
 
-## 📋 Contribution
+##  Contribution
 
 * Project Lead: Aviral Sharma
 * Redash & Docker Setup: Afreen
 * Python & Systemd Integration: Aviral
 
-## 📜 Project Development Journey & Challenges
+##  Project Development Journey & Challenges
 
 ### Initial Setup Challenges:
 
@@ -136,7 +136,7 @@ sudo systemctl start network_monitor.service
 
 
 
-## ✅ Final Checklist
+##  Final Checklist
 
 * [x] PostgreSQL DB & User Created.
 * [x] Tailscale Connected Across Devices.
