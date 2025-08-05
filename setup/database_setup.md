@@ -1,4 +1,4 @@
-# Database Setup Guide – SIEM-LT Dashboard Monitoring Project
+# Database Setup Guide – SIEM-LTM Dashboard Monitoring Project
 
 ---
 
