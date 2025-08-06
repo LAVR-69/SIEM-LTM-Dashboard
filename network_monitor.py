@@ -24,8 +24,8 @@ def get_interface_stats():
         timestamp = datetime.now()
 
         cur.execute(
-            "INSERT INTO network_interfaces (interface_name, status, is_up, rx_bytes, tx_bytes, log_time) VALUES (%s, %s, %s, %s, %s)",
-            (interface, status, is_up, rx_bytes, tx_bytes, timestamp)
+            "INSERT INTO network_interfaces (interface_name, status, rx_bytes, tx_bytes, log_time) VALUES (%s, %s, %s, %s, %s)",
+            (interface, status, rx_bytes, tx_bytes, timestamp)
         )
     conn.commit()
 

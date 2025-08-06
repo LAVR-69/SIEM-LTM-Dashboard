@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 [Unit]
 Description=Network Interface Monitor Service
 After=network.target
@@ -6,13 +8,16 @@ After=network.target
 Type=simple
 User=lavr69
 WorkingDirectory=/home/lavr69/live-system-monitor
-ExecStart=/home/lavr69/live-system-monitor/venv/bin/python3 /home/lavr69/live-system-monitor/network_monitor.py
+ExecStart=/bin/bash -c 'source /home/lavr69/live-system-monitor/venv/bin/activate && exec python3 /home/lavr69/live-system-monitor/network_monitor.py'
 Restart=always
 Environment="VIRTUAL_ENV=/home/lavr69/live-system-monitor/venv"
 Environment="PATH=/home/lavr69/live-system-monitor/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
+
 
 Steps to Deploy:
 
